@@ -1,0 +1,371 @@
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<style>
+
+.container-fluid {
+        padding: 100px;
+        font-family:Verdana !important;
+        color: aliceblue;
+    }
+
+.navbar-nav > li{
+display: inline;
+font-size: 20px;
+  padding-top: 0px;
+  padding-left:70px;
+  padding-right:0px;
+  font-family:Verdana !important;
+
+}
+
+.navbar-cart{
+    padding-left: 90px;
+}
+
+.navbar-brand{
+    padding-left: 30px;
+}
+
+.d-flex{
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.container-fluid1{
+  background-color: whitesmoke;
+ 
+}
+
+.text{
+    padding-top: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.row{
+    padding-left: 10px;
+}
+
+.navbarDropdown {
+   padding-left : 100px;
+}
+
+.filtered-search-box{
+    padding-left: 20px;
+    margin-right: 1600px;
+    margin-left: 0px;
+    float: left;
+    display: inline-block;
+}
+
+.containertitle{
+    padding-top: 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.searchtext{
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.container-product{
+   
+    
+}
+.progressContainer{
+    padding-left: 500;
+}
+
+.progressbar{
+    counter-reset: step;
+}
+
+.progressbar li{
+    list-style-type: none;
+    float: left;
+    width:33.33%;
+    word-spacing: 900px;
+    position: relative;
+    text-align: center;
+
+
+}
+
+.progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ddd;
+    display: block; 
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    
+    background-color: white;
+
+}
+
+.progressbar li:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    top: 15px;
+    left:-55%;
+    z-index:0;
+
+}
+
+.progressbar li:first-child:after{
+    content:none;
+    
+}
+
+.progressbar li.active{
+    color:mediumslateblue;
+    border-color: mediumpurple;
+    
+}
+
+.progressbar li.active:before{
+    color:mediumslateblue;
+    border-color: mediumpurple;
+    
+}
+
+.progressbar li.finished:before{
+    color:mediumslateblue;
+    border-color: mediumpurple;
+    background-color: lavender;
+}
+
+.containerTotal{
+    padding-left: 25%;
+}
+
+.buttonContainer{
+    padding-left: 50%;
+    size: 30px;
+}
+
+.container-fluid {
+        padding: 100px;
+        font-family:Verdana !important;
+        color: aliceblue;
+    }
+
+.navbar-nav > li{
+  padding-left:15px;
+  padding-right:15px;
+  font-family:Verdana !important;
+  
+}
+
+
+
+.d-flex{
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.container-fluid1{
+background-image: url(assets/Untitled\ design\ \(4\).png);
+
+ background-size: cover;
+ background-repeat: no-repeat;
+ overflow: hidden;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.container2{
+    padding-left: 10px;
+}
+
+.containerBtn{
+    padding-left: 800px;
+    height: 15px;
+    font-size: 30px;
+}
+.containerMessage{
+    padding-left: 100px;
+    padding-top: 25px;}
+
+.card{
+    font-weight: 100;
+   position: relative;
+    height:relative;
+    background-color: rgba(255, 255, 255, .15);  
+ backdrop-filter: blur(5px); 
+
+}
+
+.container{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+
+.card-text{
+    padding-bottom: 20px;
+}
+
+.styled-table{
+    border-collapse: collapse;
+    
+    font-size: 0.9em;
+    max-width: 900px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: azure;
+    position: relative;
+}
+
+.styled-table tbody tr{
+    border-top: 2px solid #009879;
+    
+}
+
+.styled-table tbody td{
+    padding-bottom: 10px;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:100%;
+    position:fixed;
+    height:0;
+    
+}
+.map-responsive iframe{
+padding-top: 30px;
+left:0;
+top:0;
+height:90%;
+width:100%;
+position:fixed;
+}
+
+</style>
+  
+
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+<div class="container-fluid1" >
+
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
+        <div class="collapse navbar-collapse" id ="navbarNav">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://static2.jetpens.com/images/a/000/148/148195.jpg?auto=format&ba=middle%2Ccenter&balph=3&blend64=aHR0cDovL3d3dy5qZXRwZW5zLmNvbS9pbWFnZXMvYXNzZXRzL3dhdGVybWFyazIucG5n&bm=difference&bs=inherit&chromasub=444&fm=jpg&mark64=aHR0cDovL3d3dy5qZXRwZW5zLmNvbS9pbWFnZXMvYXNzZXRzL3dhdGVybWFyazEucG5n&markalign=top%2Cright&markalpha=30&markscale=16&q=90&usm=20&w=1200&s=fa9864f03d4ae8b61d13738aa0dad0e8" alt="" height = "200" >
+            </a>
+            <ul class = "navbar-nav">
+            
+                <h1 style="padding-left: 400px; font-size:100px">Contact Us!</h1>
+               
+      </nav>
+
+      <div class="containerFart">
+        <div class="containerMessage" style="padding-left: 350px;">
+            <h1 class="display-2 text-align center text-black;">About Us:</h1>
+    
+        </div>
+
+        <div class="container">
+            <div class="row py-2">
+              <div class="card" style="background-color: white;">
+                  <div class="card-body">
+                      <div class="container">
+                        <div class="row py-2">
+                            <div class="col md-2" style="font-size:large">
+                            Isshin Benkyo was established in June 2022 after the owner decided to realize her dreams of opening a stationery shop. Asian stationery has always been a pasion
+                            of hers since she first discovered the field as a 7th grader. The store strives to provide the best quality stationery to allow clients to reach their full potential, hence the 
+                            the company name which can be translated to mean 'put one's whole heart into studying'.
+                      </div>
+                     
+                          </div>
+                            
+                            
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="containerMessage" style="padding-left: 350px;">
+            <h2 class="display-2 text-align center text-black;" style="font-size: 60px;">Company Information:</h2>
+    
+        </div>
+
+        <div class="container">
+            <div class="row py-2">
+              <div class="card" style="background-color: white;">
+                  <div class="card-body bg-transparent">
+                      <div class="container">
+                        <div class="row py-2">
+                            <div class="col md-2">
+                              <table class="styled-table">
+                                  <tbody>
+                                      <tr>
+                                          <td>Address:</td>
+                                          <td>Mawaritate-92-2 Shizugawa</td>
+                                          
+                                      </tr>
+                                      
+                                      <tr>
+                                          <td>Phone:</td>
+                                          <td>+81 226-46-3643</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Email Address:</td>
+                                          <td>isshinbenkyopens@gmail.com</td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                            </div>
+                            <div class="col md-2">
+                              <div class="map-reponsive">
+                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5655.7413264178485!2d140.89260709251397!3d38.25122726801171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a2808a6184db3%3A0x6cf98f34fd8d11ad!2sMiyagiken%20Sendai%20Daiichi%20High%20School!5e0!3m2!1sen!2sca!4v1654283327269!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              </div>
+                      </div>
+                     
+                          </div>
+                            
+                            
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+        
+  
+        
+        
+    </div>
+
+      
+
+     
+
+      
+
+
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+</body>
+</html>
